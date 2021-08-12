@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configuração de caracteres e compatibilidade com navegador -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da pagina -->
+    <title>Imersão Dev - Aula 07</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Corpo da pagina -->
+  <body>
+    <div class="container">
+      <img src="./img/controle-de-video-game.png" class="page-logo" alt="" />
+      <h1 class="page-title">Super Trunfo</h1>
+
+      <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+      <form id="form">
+        <h2>Escolha o seu atributo</h2>
+        <div class="wrapper">
+          <div id="placar"></div>
+          <div id="quantidade-cartas"></div>
+          <div id="cartas">
+            <div id="carta-jogador" class="carta"></div>
+            <div id="carta-maquina" class="carta"></div>
+          </div>
+          <button
+            class="button-jogar"
+            type="button"
+            id="btnJogar"
+            onclick="jogar()"
+            disabled="false"
+          >
+            Jogar
+          </button>
+        </div>
+        <div id="resultado"></div>
+        <button
+          type="button"
+          id="btnProximaRodada"
+          onclick="proximaRodada()"
+          disabled="true"
+        >
+          Proxima rodada
+        </button>
+      </form>
+    </div>
+    <script src="./apps.js"></script>
+  </body>
+</html>
