@@ -19,28 +19,38 @@ body {
   margin: 15px 0;
 }
 
+h2 {
+  color: #23e49d;
+}
+
 .page-logo {
   width: 100px;
+}
+
+button:hover {
+  transition: 0.6s;
+  opacity: 0.8;
 }
 
 button,
 .button-jogar {
   padding: 0.8rem 1.5rem;
   margin: 1rem 0;
-  border-radius: 5px;
+  border-radius: 18px;
   border: none;
-  font-size: 1rem;
-  width: 10%;
+  font-size: 2rem;
+  width: 19%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 45%;
-  background-color: cadetblue;
+  margin-left: 41%;
+  background-color: #005fff;
 }
 
 h2 {
   color: #23e49d;
+  font-size: 22pt;
 }
 
 #carta-jogador,
@@ -77,10 +87,11 @@ h2 {
 }
 
 .carta-status {
-  height: 160px;
+  height: 153px;
   margin: 2rem;
   color: white;
   z-index: 2;
+  margin-left: 14px;
 }
 
 .carta-status input {
@@ -92,11 +103,19 @@ h2 {
 }
 
 .resultado-final {
-  color: white;
-  font-size: 2rem;
+  color: #0d0675;
+  font-size: 46pt;
   text-transform: uppercase;
   font-weight: bolder;
-  padding: 1rem;
+  border: solid;
+  padding: 2rem;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 55px;
+  background: #00ffd06b;
+  margin-left: 43%;
+  display: flex;
 }
 
 .--spacing {
@@ -116,8 +135,8 @@ form {
 .carta-subtitle {
   z-index: 2;
   position: absolute;
-  top: 16px;
-  left: 37px;
+  top: -5px;
+  left: 19px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -130,5 +149,6 @@ form {
 
 #placar,
 #quantidade-cartas {
-  color: white;
+  color: rgb(252, 252, 252);
+  font-size: 16pt;
 }
