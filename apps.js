@@ -5,7 +5,7 @@ var cartaThomas = { nome: "Thomas Shelby", imagem: "https://cdn.jornaldebrasilia
 var cartaNaruto = { nome: "Naruto", imagem: "https://conteudo.imguol.com.br/c/entretenimento/16/2017/06/27/naruto-1498593686428_v2_450x337.png", atributos: { ataque: 360, defesa: 450, magia: 100 } }
 var cartaJackSparrow = { nome: "Jack Sparrow", imagem: "https://www.ofuxico.com.br/img/upload/noticias/2017/05/20/johnny-depp-so-atende-se-for-chamado-de-jack-sparrow_294577_36.jpg", atributos: { ataque: 320, defesa: 200, magia: 100 } }
 var cartaLucifer = { nome: "Lúcifer Morningstar", imagem: "https://pbs.twimg.com/profile_images/1084964185732235265/hsA5QNpm_400x400.jpg", atributos: { ataque: 1205, defesa: 999, magia: 999 } }
-var cartaFin = { nome: "Fin", imagem: "https://cn.i.cdn.ti-platform.com/content/14/hora-de-aventura/showpage/br/adventure.f19c2485.jpg", atributos: { ataque: 110, defesa: 360, magia: 350 } }
+var cartaFinn = { nome: "Finn", imagem: "https://http2.mlstatic.com/D_NQ_NP_4002-MLB4891065948_082013-O.jpg", atributos: { ataque: 110, defesa: 360, magia: 350 } }
 var cartaJack = { nome: "Jack Cachorro", imagem: "https://static3.tcdn.com.br/img/img_prod/906555/180_camiseta_hora_de_aventura_jake_o_cachorro_141_3_7a8466862e0c230ff5ff83e65fbf365a.jpg", atributos: { ataque: 500, defesa: 850, magia: 600 } }
 var cartaVoldemort = { nome: "Lord Voldemort", imagem: "https://www.recreio.com.br/images/large/2021/01/11/lord-voldemort-1226566.jpg", atributos: { ataque: 500, defesa: 600, magia: 999 } }
 var cartaResplendor = { nome: "Sr. Resplendor", imagem: "https://cinemaratona.com/wp-content/uploads/2021/06/rick-morty-x-divulgacao.jpg", atributos: { ataque: 1000, defesa: 900, magia: 500 } }
@@ -14,7 +14,7 @@ var cartaMEGA = { nome: "MEGA MAGIA", imagem: "https://pm1.narvii.com/6353/65565
 
 var cartaMaquina
 var cartaJogador
-var cartas = [cartaHarry, cartaRick, cartaThomas, cartaNaruto, cartaJackSparrow, cartaLucifer, cartaFin, cartaJack, cartaVoldemort, cartaResplendor, cartaMEGA]
+var cartas = [cartaHarry, cartaRick, cartaThomas, cartaNaruto, cartaJackSparrow, cartaLucifer, cartaFinn, cartaJack, cartaVoldemort, cartaResplendor, cartaMEGA]
 // índice        0           1           2           3               4              5             6           7             8             9             10
 
 /* Formato da array */
@@ -25,7 +25,7 @@ var cartas = [cartaHarry, cartaRick, cartaThomas, cartaNaruto, cartaJackSparrow,
 // carta[3] cartaNaruto
 // carta[4] cartaJackSparrow
 // carta[5] cartaLucifer
-// carta[6] cartaFin
+// carta[6] cartaFinn
 // carta[7] cartaJack
 // carta[8] cartaVoldemort
 // carta[9] cartaResplendor
@@ -68,7 +68,7 @@ function sortearCarta() {
 
 function exibeCartaJogador() {
     var divCartaJogador = document.getElementById("carta-jogador")
-    var moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
+    var moldura = '<img src="https://i.postimg.cc/ht54Kkqw/3.png" style=" width: inherit; height: inherit; position: absolute;">';
     divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`
     var nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`
     var opcoesTexto = ""
@@ -128,7 +128,7 @@ function jogar() {
 
 function exibeCartaMaquina() {
     var divCartaMaquina = document.getElementById("carta-maquina")
-    var moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
+    var moldura = '<img src="https://i.postimg.cc/ht54Kkqw/3.png" style=" width: inherit; height: inherit; position: absolute;">';
     divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`
     var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`
     var opcoesTexto = ""
